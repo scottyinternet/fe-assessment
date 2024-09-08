@@ -1,7 +1,7 @@
 # Digital Engagement Front End Developer Assessment
 
 ## Requirements
-- Create a public repository on GitHub
+[x] Create a public repository on GitHub
 - Recreate the supplied comp using React
 - Make a request to a JSON endpoint (`./data.json`) and populate the list
   - links should have `href="#"`
