@@ -8,7 +8,7 @@ import MainContent from './_shared/MainContent'
 
 export default function Layout() {
     return (
-        <div class="layout">
+        <div className="layout">
             <Header />
             <Toolbar />
             <MainContent />
