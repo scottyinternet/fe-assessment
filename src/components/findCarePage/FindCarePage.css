@@ -1,0 +1,82 @@
+.letter-button {
+    color: rgb(30,113,206);
+    width:  25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: transparent; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    border: none;
+}
+.letter-button-selected {
+    color: rba(30,113, 206);
+    background-color: rgba(0, 0, 255, 0.1); 
+}
+.letter-button:hover {
+    background-color: rgba(0, 0, 255, 0.2);
+}
+.letter-button:disabled {
+    cursor: default;
+    color: rgb(170, 191, 204);
+    width:  25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: transparent; 
+    border: none;
+}
+.letter-button:disabled:hover {
+    cursor: default;
+    color: rgb(170, 191, 204);
+    width:  25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: transparent; 
+    border: none;
+}
+
+.letter-button-disabled {
+    width:  25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: transparent; 
+    border: none;
+}
+.letter-button-disabled:disabled {
+    color: rgb(170, 191, 204);
+}
+.letter-button-disabled:disabled {
+    background-color: transparent; 
+}
+
+.term-list {
+    display: flex;
+    justify-content: space-between; 
+
+}
+.left-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.right-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.underline {
+    margin-bottom: 10px;
+    width: 40px;
+    height: 2px; 
+    background-color: black;
+}
+.letter-title {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+.term-link{
+    color: rgb(30,113,206);
+    text-decoration: none;
+}
+.term-link:hover {
+    text-decoration: underline;
+}
