@@ -5,7 +5,7 @@ export default function FooterNav() {
         <footer className="fixed footer-nav">
             <div className="inner-footer-nav">
                 <div className="inner-footer-nav-left-container">
-                    <img className="logo-footer" src="./images/HCAFooterLogoScreenshot.png" alt="HCA Main Logo"></img>
+                    <img className="logo-footer" src={`${process.env.PUBLIC_URL}/images/HCAFooterLogoScreenshot.png`} alt="HCA Main Logo"></img>
                     <div className="address-container">
                         <p>HCA Houston Healthcare</p>
                         <p>3737 Buffalo Speedway</p>
@@ -25,21 +25,25 @@ export default function FooterNav() {
                     <h6 className="footer-title">Follow Us</h6>
                     <div className="socials-container">
                         <div className="circle-wrapper">
-                            <i className="bi bi-behance"></i>
+                            <button className="social-button" aria-label="Behance">
+                                <i className="bi bi-behance"></i>
+                            </button>
                         </div>
                         <div className="circle-wrapper">
-                            <i class="bi bi-facebook"></i>
-                        </div>
-
-                        <div className="circle-wrapper">
-                            <i class="bi bi-instagram"></i>
+                            <button className="social-button" aria-label="Facebook">
+                                <i className="bi bi-facebook"></i>
+                            </button>
                         </div>
                         <div className="circle-wrapper">
-                            <i class="bi bi-twitter"></i>
+                            <button className="social-button" aria-label="Instagram">
+                                <i className="bi bi-instagram"></i>
+                            </button>
                         </div>
-
-
-
+                        <div className="circle-wrapper">
+                            <button className="social-button" aria-label="Twitter">
+                                <i className="bi bi-twitter"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
