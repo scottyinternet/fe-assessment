@@ -34,13 +34,15 @@ export default function FindCareFilter(props) {
     })
 
     return (
-        <div className="filter">
+        <section className="filter">
             <div className="filter-content">
-                <h3> Treatments, Services and Specialties </h3>
+                <div className="filter-title-container">
+                    <h4 className="filter-title"> Treatments, Services and Specialties </h4>
+                </div>
                 <div className="filter-buttons-container">
                     {letterButtons}
                 </div>
             </div>
-        </div>
+        </section>
     ) 
 }
