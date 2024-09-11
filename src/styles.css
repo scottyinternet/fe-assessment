@@ -4,6 +4,10 @@
     box-sizing: border-box;
   }
 
+  .border {
+    border: solid;
+  }
+
   .layout {
     display: flex;
     flex-direction: column;
@@ -16,9 +20,20 @@
     flex-shrink: 0;
   }
 
-  .header {
-    height: 55px;
+  .navbar {
     background-color: rgb(10, 34, 64);
+    height: 60px; 
+  }
+
+  .navbar .nav-link {
+    color: white !important; 
+  }
+
+  .navbar .nav-link:hover {
+    color: #f0f0f0f5 !important; 
+  }
+  .navbar-brand {
+    padding: 10px;  
   }
   .toolbar {
     height:60px;
@@ -87,4 +102,32 @@
     border-radius: 4px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
     flex: 1;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-container {
+  position: relative;
+  display: inline-block;
+}
+
+.input-with-icon {
+  padding-left: 30px; /* Space for the icon */
+  height: 35px;
+  font-size: 16px;
+}
+
+.input-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* Make sure the icon doesn't block input interaction */
+}
+
+li {
+  padding: 5px;
 }
