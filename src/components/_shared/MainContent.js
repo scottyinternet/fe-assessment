@@ -3,8 +3,8 @@ import FindCarePage from '../findCarePage/FindCarePage'
 
 export default function MainContent() {
     return (
-        <div className="main-content">
+        <section className="main-content">
             <FindCarePage />
-        </div>
+        </section>
     ) 
 }

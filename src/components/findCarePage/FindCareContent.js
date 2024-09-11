@@ -11,10 +11,9 @@ export default function FindCareContent(props) {
             elements.push(<TermListSection key={key + 'termlist'} terms={value} />)
         }
     }
-    
 
     return (
-        <div className="border content">
+        <div className="content">
             {elements}
         </div>
     ) 
