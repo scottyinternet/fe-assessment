@@ -6,7 +6,7 @@ export default function Header() {
             <div className="collapse navbar-collapse space-between" id="navbarSupportedContent">
         <div className="logoContainer">
             <a className="navbar-brand" href="#">
-            <img className="logo-main" src="./images/HCAMainLogoScreenshot.png" alt="HCA Main Logo"></img>
+            <img className="logo-main" src={`${process.env.PUBLIC_URL}/images/HCAMainLogoScreenshot.png`} alt="HCA Main Logo"></img>
             </a>
         </div>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,14 +54,12 @@ export default function Header() {
                 <li className="nav-item">
                     <a className="nav-link" href="#">MyHealthONE</a>
                 </li>
-                <li>
-                    <div className="input-container">
-                        <i className="bi bi-search input-icon"></i>
+                    <div className="search-input-container">
+                        <i className="bi bi-search search-input-icon"></i>
 
-                        <input className="input-with-icon" type="search" placeholder="Search" aria-label="Search">
+                        <input className="search-input-with-icon" type="search" placeholder="Search" aria-label="Search">
                     </input>
                     </div>
-                </li>
                 </ul>
             </div>
 

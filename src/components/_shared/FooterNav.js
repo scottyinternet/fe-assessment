@@ -5,7 +5,7 @@ export default function FooterNav() {
         <footer className="fixed footer-nav">
             <div className="inner-footer-nav">
                 <div className="inner-footer-nav-left-container">
-                    <img className="logo-footer" src="./images/HCAFooterLogoScreenshot.png" alt="HCA Main Logo"></img>
+                    <img className="logo-footer" src={`${process.env.PUBLIC_URL}/images/HCAFooterLogoScreenshot.png`} alt="HCA Main Logo"></img>
                     <div className="address-container">
                         <p>HCA Houston Healthcare</p>
                         <p>3737 Buffalo Speedway</p>

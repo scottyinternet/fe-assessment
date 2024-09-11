@@ -61,14 +61,16 @@
   .navbar {
     background-color: rgb(10, 34, 64);
     height: 4vh;
+    min-height: 40px !important;
+
   }
   .navbar .nav-link {
     color: white; 
-    font-size: .9rem; 
+    font-size: .8rem; 
     padding-top: 1.5vh;
     font-weight: 300;
     letter-spacing: -.2px;
-  }
+  } 
 
   .med-icon {
     font-size: 1rem !important;
@@ -86,7 +88,8 @@
     display: flex;
   }
   .logo-main {
-    height: 3vh;
+    height: 4vh;
+    min-height: 30px;
     padding-bottom: 2px;
   }
   .logo-footer {
@@ -98,6 +101,7 @@
   /* TOOLBAR */
   .toolbar {
     height:5vh;
+    min-height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -238,20 +242,21 @@
     justify-content: space-between;
   }
 
-  .input-container {
+  .search-input-container {
     margin-top: 5px;
     padding-top:2px;
     position: relative;
     display: inline-block;
   }
 
-  .input-with-icon {
+  .search-input-with-icon {
     padding-left: 30px; /* Space for the icon */
     height: 3vh;
+    min-height: 25px;
     font-size: 1rem;
   }
 
-  .input-icon {
+  .search-input-icon {
     position: absolute;
     left: 10px;
     top: 50%;
