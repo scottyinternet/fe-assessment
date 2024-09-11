@@ -26,6 +26,11 @@ jobs:
           unset CI
           npm run build
 
+      - name: Configure Git
+        run: |
+          git config --global user.email "griffin.scott88@gmail.com"
+          git config --global user.name "Scott Griffin"
+
       - name: Deploy to GitHub Pages
         run: npm run deploy
         env:
