@@ -11,6 +11,7 @@ export default function FindCarePage() {
         fetch('./data.json')
         .then(respone => respone.json())
         .then(data => createTermListMap(data.termList))
+        .catch(error => console.error('Error fetching data from local file: ', error))
     },[]);
 
     function createTermListMap(termList) {
