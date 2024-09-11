@@ -1,8 +1,8 @@
 {
-  "homepage": "https://scottyinternet.github.io/fe-assessment",
   "name": "sg-fe-assessment",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://scottyinternet.github.io/fe-assessment",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -16,6 +16,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "build": "react-scripts build",
     "deploy": "git add . && git commit -m 'Deploy' && git push origin main",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
