@@ -10,23 +10,22 @@ export default function Footer() {
                     </span>
                 </div>
                 <div class="footer-right-container">
-                    <p className="footer-link-b">
+                    <div class="link-span">
                         <a className="footer-link-b" href='#'>Notice of Privacy Practices</a> | 
                         <a className="footer-link-b"href='#'>Terms & Conditions</a> | 
                         <a className="footer-link-b"href='#'>Notice at Collection</a> | 
                         <a className="footer-link-b"href='#'>Privacy Policy</a> | 
                         <a className="footer-link-b"href='#'>Do Not Sell My Personal Information</a>
-                    </p>
-                    <p className="footer-link-b">
+                    </div>
+                    <div class="link-span">
                         <a className="footer-link-b" href='#'>Social Media Policy</a> | 
                         <a className="footer-link-b"href='#'>Acceptable Use Policy</a> | 
                         <a className="footer-link-b"href='#'>HCA Nondiscrimination Notice</a> | 
                         <a className="footer-link-b"href='#'>Accessibility</a> | 
                         <a className="footer-link-b"href='#'>Responsible Disclosure</a>
-                    </p>
+                    </div>
                 </div>
             </div>
-
         </footer>
     ) 
 }

@@ -7,7 +7,7 @@
     cursor: pointer;
     transition: background-color 0.3s ease; 
     border: none;
-    font-size: .75rem;
+    font-size: .8rem;
 }
 .letter-button-selected {
     color: rba(30,113, 206);
@@ -58,25 +58,28 @@
     flex-direction: column;
 }
 .underline {
-    margin-bottom: 0px;
+    margin-bottom: 4px;
     margin-top: -2.5px;
     padding: 0px;
     width: 40px;
     height: 2px; 
     background-color: black !important;
-    color: black;
+    color: black !important;
+    border-color: black;
+    fill: black;
 }
 .letter-title {
     margin-top: 5px;
     margin-bottom: 0px;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 .term-link{
     color: rgb(30,113,206);
     text-decoration: none;
     margin: 3px;
-    font-size: .5rem;
-    line-height: 1;
+    font-size: .8rem;
+    line-height: 1.2;
+    font-weight: 300;
 }
 .term-link:hover {
     text-decoration: underline;
@@ -93,7 +96,7 @@
     padding-bottom: 5px;
 }
 .filter-title {
-    font-size: 1rem;
+    font-size: 1.25rem;
     margin: 0px;
     font-weight: 300;
 }
@@ -118,16 +121,16 @@
 .right-section {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
 }
 .find-care {
-    font-size: 1.25rem;
+    font-size: 2.6vh;
     font-weight: 300;
     color: white;
 }
 .need-help {
-    font-size: .75rem;
-    font-weight: 200;
+    font-size: 1.2vh;
+    font-weight: 350;
     color: white;
 }
 .looking-input-group {
@@ -139,8 +142,9 @@
     border-radius: 0px !important;  
     border: .5px solid gray !important;
     border-right: 1px solid gray;
-    font-size: .6rem !important;
-    letter-spacing: -1px;
+    font-size: 1vh !important;
+    letter-spacing:-.5px;
+    width: 50% !important;
 }
 .looking-button {
     height: 3vh;
@@ -156,7 +160,11 @@
 }
 .search-icon-container {
     height: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .search-icon {
-    font-size: .7rem;
+    margin-top: 1vh;
+    color: #000;
 }

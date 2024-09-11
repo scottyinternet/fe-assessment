@@ -57,19 +57,27 @@
     flex: 0 0 auto;
     flex-shrink: 0;
   }
+
   .navbar {
     background-color: rgb(10, 34, 64);
     height: 4vh;
   }
   .navbar .nav-link {
     color: white; 
-    font-size: .75rem; 
+    font-size: .9rem; 
+    padding-top: 1.5vh;
+    font-weight: 300;
+    letter-spacing: -.2px;
   }
+
   .med-icon {
-    font-size: .8rem;
+    font-size: 1rem !important;
   }
   .navbar .nav-link:hover {
     color: #d0dcf0c1; 
+  }   
+  .navbar .nav-link:focus {
+    color: #c5dbffc1; 
   }   
   .navbar-brand {
     padding: 10px;  
@@ -86,9 +94,61 @@
     margin: 10px;
     margin-top: 20px;
   }
+
+  /* TOOLBAR */
   .toolbar {
     height:5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
+  .toolbar-button {
+    border-radius: 3px !important;
+    height: 80%;
+    font-size: .7rem !important;
+    border: none;
+    margin-inline: 5px;
+}
+.button-container {
+    padding-right: 20px;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-primary {
+    background-color: rgb(10, 34, 64) !important;
+    font-size: .8em !important;
+    border-radius: 3px !important;
+    height: 80%;
+
+}
+.btn-light {
+    font-size: .8em !important;
+    background-color: rgb(248, 218, 222) !important;
+    border: 1px solid rgb(187, 181, 181) !important;
+    border-radius: 3px !important;
+    height: 80%;
+}
+
+.bi { 
+    font-size: .8rem;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.bi-exclamation-triangle-fill {
+    color: red !important;
+    fill: black !important;
+}
+.bi-2-circle-fill {
+    font-size: .8rem;
+    color: white;
+}
+.inner-button{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
   .bi-clock {
     padding: 10px;
   }
@@ -107,17 +167,13 @@
     background-color: transparent !important;
     border: none !important;
   }
-  .dropdown-item{
-    background-color: white !important;
-  }
-
   .footer-nav {
     height: 18vh;
     display: flex;
     justify-content: center;
   }
   .footer {
-    height: 5h;
+    height: 5.2vh;
     background-color: rgb(20, 26, 29);
     display: flex;
     justify-content: center;
@@ -183,6 +239,7 @@
   }
 
   .input-container {
+    margin-top: 5px;
     padding-top:2px;
     position: relative;
     display: inline-block;
@@ -190,8 +247,8 @@
 
   .input-with-icon {
     padding-left: 30px; /* Space for the icon */
-    height: 3.4vh;
-    font-size: .75rem;
+    height: 3vh;
+    font-size: 1rem;
   }
 
   .input-icon {
@@ -223,18 +280,23 @@ li {
   flex: 1.4;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 .inner-footer-nav-center-container {
   flex: 1;
-display: flex;
+  display: flex;
   flex-direction: column;
 
 }
 .inner-footer-nav-right-container {
   flex: 1.8;
 }
+.address-container {
+
+  padding-bottom:10px;
+}
 .address-container p {
-   font-size: .5rem !important;
+  font-size: .9vh !important;
    margin:5px;
    margin-left:10px;
 }
@@ -243,24 +305,28 @@ display: flex;
   margin: 3px;
   margin-top: 25px;
   margin-bottom: 10px;
-  font-size: .5rem;
+  font-size: .8rem;
 }
 
 .footer-link{
-  font-size: .5rem !important;
+  font-size: .9vh !important;
   color: rgb(114,136,142);
-  margin: 3px;
+  margin: 5px;
   padding: 0px;
 }
 
 .socials-container {
   display: flex;
 }
+.socials-container i{
+  font-size: 1.5rem !important;
+}
 
 .footer-inner-container {
   display: flex;
   width: 50%;
   justify-content: space-between;
+  align-items: center;
   height: 100%;
   flex-grow: 0;
 }
@@ -268,24 +334,29 @@ display: flex;
   flex: 1;
 }
 .copyright{
-  padding-top: 10px;
   color:rgb(126, 143, 153);
   font-size: .6rem;
 }
 .footer-link-b{
-  padding-top: 15px;
-  line-height: 0;
-  margin: 0px;
-
   color:white !important;
   font-size: .5rem;
-  padding-left: 2px;
   font-weight: 300 !important;
+  padding: 0px;
+  margin: 0px;
+  line-height: 0px;
 }
 
 .footer-right-container {
   flex: 2;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: flex-end;
+  height: 100%;
+}
+.link-span {
+  display: flex;
+  height: .7vh;
+  padding: 0px;
+  margin: 2px;
 }
